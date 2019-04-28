@@ -1,7 +1,5 @@
 package com.github.wojtechm.zadania_rekrutacyjne.string;
 
-import java.util.Stack;
-
 /**
  * Given a String consisting of alphabetic characters only,
  * write a method - reduce that returns the given string with all equal characters
