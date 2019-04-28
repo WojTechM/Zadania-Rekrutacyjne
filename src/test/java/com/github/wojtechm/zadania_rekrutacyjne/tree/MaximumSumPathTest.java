@@ -2,7 +2,7 @@ package com.github.wojtechm.zadania_rekrutacyjne.tree;
 
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
 
 public class MaximumSumPathTest {
 

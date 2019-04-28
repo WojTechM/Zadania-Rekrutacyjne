@@ -18,7 +18,6 @@ package com.github.wojtechm.zadania_rekrutacyjne.tree;
  *   / \   / \
  *  1  50 1  1
  *
- *
  * @author Wojciech Makieła
  */
 class MaximumSumPath {

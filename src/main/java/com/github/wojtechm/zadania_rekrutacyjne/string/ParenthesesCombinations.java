@@ -1,6 +1,5 @@
 package com.github.wojtechm.zadania_rekrutacyjne.string;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -16,25 +15,6 @@ import java.util.List;
 class ParenthesesCombinations {
 
     static List<String> parenthesesCombinations(int pairs) {
-        List<String> strings = new ArrayList<>();
-        if (pairs <= 0) {
-            return strings;
-        }
-        addCombinations(pairs, pairs, "", strings);
-        return strings;
-    }
-
-    private static void addCombinations(int left, int right, String combination, List<String> strings) {
-        if (left == 0 && right == 0) {
-            strings.add(combination);
-            return;
-        }
-        if (left > 0) {
-            addCombinations(left - 1, right, combination + "(", strings);
-        }
-
-        if (right > left) {
-            addCombinations(left, right - 1, combination + ")", strings);
-        }
+        return null;
     }
 }
