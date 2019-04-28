@@ -24,10 +24,6 @@ package com.github.wojtechm.zadania_rekrutacyjne.tree;
 class MaximumSumPath {
 
     static int maxSumPath(TreeNode root) {
-        if (root == null) {
-            return 0;
-        }
-
-        return root.value + Math.max(maxSumPath(root.left), maxSumPath(root.right));
+        return 0;
     }
 }
