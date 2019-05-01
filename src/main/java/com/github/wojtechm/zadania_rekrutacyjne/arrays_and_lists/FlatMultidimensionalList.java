@@ -3,7 +3,6 @@ package com.github.wojtechm.zadania_rekrutacyjne.arrays_and_lists;
 import com.github.wojtechm.zadania_rekrutacyjne.tools.Difficulty;
 import com.github.wojtechm.zadania_rekrutacyjne.tools.Level;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,10 +17,6 @@ import java.util.List;
 class FlatMultidimensionalList {
 
     static List<String> flat(List<List<String>> list) {
-        List<String> result = new ArrayList<>();
-        for (List<String> l : list) {
-            result.addAll(l);
-        }
-        return result;
+        return null;
     }
 }
