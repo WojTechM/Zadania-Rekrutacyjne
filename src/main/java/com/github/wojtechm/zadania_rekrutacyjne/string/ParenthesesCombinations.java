@@ -1,5 +1,8 @@
 package com.github.wojtechm.zadania_rekrutacyjne.string;
 
+import com.github.wojtechm.zadania_rekrutacyjne.tools.Difficulty;
+import com.github.wojtechm.zadania_rekrutacyjne.tools.Level;
+
 import java.util.List;
 
 /**
@@ -12,6 +15,7 @@ import java.util.List;
  *
  * @author Wojciech Makieła
  */
+@Difficulty(Level.HARD)
 class ParenthesesCombinations {
 
     static List<String> parenthesesCombinations(int pairs) {

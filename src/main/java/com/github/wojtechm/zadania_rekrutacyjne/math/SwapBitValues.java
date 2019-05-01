@@ -1,5 +1,8 @@
 package com.github.wojtechm.zadania_rekrutacyjne.math;
 
+import com.github.wojtechm.zadania_rekrutacyjne.tools.Difficulty;
+import com.github.wojtechm.zadania_rekrutacyjne.tools.Level;
+
 /**
  * Given a positive integer 'n'
  * write a method that converts n to binary and replaces all 0s with 1s and 1s with 0s
@@ -18,6 +21,7 @@ package com.github.wojtechm.zadania_rekrutacyjne.math;
  *
  * @author Wojciech Makieła
  */
+@Difficulty(Level.MEDIUM)
 class SwapBitValues {
 
     static int swap(int n) {

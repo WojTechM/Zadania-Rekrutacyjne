@@ -1,5 +1,8 @@
 package com.github.wojtechm.zadania_rekrutacyjne.tree;
 
+import com.github.wojtechm.zadania_rekrutacyjne.tools.Difficulty;
+import com.github.wojtechm.zadania_rekrutacyjne.tools.Level;
+
 /**
  * Given a binary tree consisting of nodes with positive integer values,
  * write a method - maxSumPath that returns the maximum sum of values obtained by traversing nodes along
@@ -20,6 +23,7 @@ package com.github.wojtechm.zadania_rekrutacyjne.tree;
  *
  * @author Wojciech Makieła
  */
+@Difficulty(Level.EASY)
 class MaximumSumPath {
 
     static int maxSumPath(TreeNode root) {

@@ -1,5 +1,8 @@
 package com.github.wojtechm.zadania_rekrutacyjne.arrays_and_lists;
 
+import com.github.wojtechm.zadania_rekrutacyjne.tools.Difficulty;
+import com.github.wojtechm.zadania_rekrutacyjne.tools.Level;
+
 /**
  * Write a method to return a sorted array of integers created by merging 2 sorted arrays.
  *
@@ -12,6 +15,7 @@ package com.github.wojtechm.zadania_rekrutacyjne.arrays_and_lists;
  *
  * @author Wojciech Makieła
  */
+@Difficulty(Level.EASY)
 class MergeSortedArrays {
 
     static int[] merge(int[] first, int[] second) {

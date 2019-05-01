@@ -1,5 +1,8 @@
 package com.github.wojtechm.zadania_rekrutacyjne.string;
 
+import com.github.wojtechm.zadania_rekrutacyjne.tools.Difficulty;
+import com.github.wojtechm.zadania_rekrutacyjne.tools.Level;
+
 /**
  * Given a String consisting of alphabetic characters only,
  * write a method - reduce that returns the given string with all equal characters
@@ -13,6 +16,7 @@ package com.github.wojtechm.zadania_rekrutacyjne.string;
  *
  * @author Wojciech Makieła
  */
+@Difficulty(Level.MEDIUM)
 class Reduce {
 
     static String reduce(String toReduce) {
