@@ -24,7 +24,11 @@ import com.github.wojtechm.zadania_rekrutacyjne.tools.Level;
 @Difficulty(Level.MEDIUM)
 class SwapBitValues {
 
+    private SwapBitValues(){}
+
     static int swap(int n) {
-        return 0;
+        var length = Integer.toBinaryString((n)).length();
+        var mask = "0".repeat(31 - length) + "1".repeat(length);
+        return Integer.parseInt(mask, 2) & Integer.parseInt(Integer.toBinaryString(n ^ Integer.MAX_VALUE), 2);
     }
 }
