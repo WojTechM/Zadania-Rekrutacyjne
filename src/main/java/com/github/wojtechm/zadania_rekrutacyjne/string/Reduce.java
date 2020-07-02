@@ -19,7 +19,18 @@ import com.github.wojtechm.zadania_rekrutacyjne.tools.Level;
 @Difficulty(Level.MEDIUM)
 class Reduce {
 
+    private Reduce(){}
+
+    public static void main(String[] args) {
+        System.out.println(reduce("book"));
+    }
     static String reduce(String toReduce) {
+        if(toReduce == null) throw new IllegalArgumentException("Cannot reduce null");
+        var lastLength = -1;
+        while (lastLength != toReduce.length()) {
+            lastLength = toReduce.length();
+            toReduce = toReduce.replaceAll("(.)\\1", "");
+        }
         return toReduce;
     }
 }
