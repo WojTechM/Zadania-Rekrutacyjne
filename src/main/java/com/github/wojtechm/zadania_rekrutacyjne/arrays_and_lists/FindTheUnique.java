@@ -4,7 +4,6 @@ import com.github.wojtechm.zadania_rekrutacyjne.tools.Difficulty;
 import com.github.wojtechm.zadania_rekrutacyjne.tools.Level;
 
 import java.util.*;
-import java.util.stream.Stream;
 
 /**
  * Given a list of some elements
