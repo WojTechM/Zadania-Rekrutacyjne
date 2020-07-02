@@ -3,7 +3,8 @@ package com.github.wojtechm.zadania_rekrutacyjne.arrays_and_lists;
 import com.github.wojtechm.zadania_rekrutacyjne.tools.Difficulty;
 import com.github.wojtechm.zadania_rekrutacyjne.tools.Level;
 
-import java.util.List;
+import java.util.*;
+import java.util.stream.Stream;
 
 /**
  * Given a list of some elements
@@ -20,7 +21,16 @@ import java.util.List;
 @Difficulty(Level.MEDIUM)
 class FindTheUnique {
 
+    private FindTheUnique(){}
+
     static <T extends Comparable<T>> T findUnique(List<T> list) {
+        if (list == null) throw new IllegalArgumentException();
+        if (list.size() == 2) throw new IllegalArgumentException();
+        for (T one : list) {
+            if (list.stream().filter(e -> Objects.equals(e, one)).count() == 1) {
+                return one;
+            }
+        }
         return null;
     }
 }
