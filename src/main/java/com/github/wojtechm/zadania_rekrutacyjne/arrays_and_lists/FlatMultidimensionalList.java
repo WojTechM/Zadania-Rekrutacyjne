@@ -20,8 +20,7 @@ class FlatMultidimensionalList {
 
     private FlatMultidimensionalList(){}
 
-    static List<String> flat(List<List<String>> list)
-    {
+    static List<String> flat(List<List<String>> list){
         if (list == null) {
             throw new IllegalArgumentException();
         }

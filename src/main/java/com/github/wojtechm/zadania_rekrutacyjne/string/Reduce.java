@@ -21,16 +21,21 @@ class Reduce {
 
     private Reduce(){}
 
-    public static void main(String[] args) {
-        System.out.println(reduce("book"));
-    }
     static String reduce(String toReduce) {
         if(toReduce == null) throw new IllegalArgumentException("Cannot reduce null");
-        var lastLength = -1;
-        while (lastLength != toReduce.length()) {
-            lastLength = toReduce.length();
-            toReduce = toReduce.replaceAll("(.)\\1", "");
+        var marker = '1';
+        char[] toReduceArray = toReduce.toCharArray();
+        for (int i = 0; i < toReduceArray.length; i++) {
+            var j = 1;
+            while (i >= 0 &&
+                    toReduceArray[i] != marker &&
+                    i + j < toReduceArray.length &&
+                    toReduceArray[i] == toReduceArray[i + j]) {
+                toReduceArray[i] = marker;
+                toReduceArray[i-- + j] = marker;
+                j += 2;
+            }
         }
-        return toReduce;
+        return String.copyValueOf(toReduceArray).replace("1", "");
     }
 }

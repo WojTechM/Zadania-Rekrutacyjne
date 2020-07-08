@@ -42,7 +42,7 @@ class ParenthesesCombinations {
         int maxBeforeNumber = (int) (maxNumber - Math.pow(2, pairs - 1));
 
         makeOut(pairs, out, number, maxBeforeNumber);
-        out.add(convert(maxNumber));
+        out.add(convertNumberToParentheses(maxNumber));
         Collections.sort(out);
         return out;
     }
@@ -51,7 +51,7 @@ class ParenthesesCombinations {
         while (number <= maxBeforeNumber) {
             if (Integer.bitCount(number) == pairs) {
                 int sum = 0;
-                String converted = convert(number);
+                String converted = convertNumberToParentheses(number);
                 for (char item : converted.toCharArray()) {
                     sum += (item == '(')? 1: -1;
                     if (sum < 0) {
@@ -66,7 +66,7 @@ class ParenthesesCombinations {
         }
     }
 
-    private static String convert(int in) {
+    private static String convertNumberToParentheses(int in) {
         StringBuilder out = new StringBuilder();
         StringBuilder inRev = new StringBuilder(Integer.toBinaryString(in));
         for (char item : inRev.toString().toCharArray()) {
